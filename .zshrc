@@ -264,7 +264,7 @@ export COMPOSER_MEMORY_LIMIT=-1
 
 
 # Load the starship terminal theme
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # Load auto suggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
