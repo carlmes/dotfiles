@@ -1,6 +1,13 @@
-# color commands
+# Color commands
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-# long listing
+# Long listing
 alias ll='ls -laFh'
+
+# EAP - From Tim
+# alias eap="jenv shell 11 && /Users/carl/Development/rhpam7-install-demo/target/jboss-eap-7.3/bin/standalone.sh -Dorg.jbpm.var.log.length=2048"
+alias eap="/Users/carl/Development/rhpam7-install-demo/target/jboss-eap-7.4/bin/standalone.sh -c standalone.xml -Dorg.jbpm.var.log.length=255"
+
+# Visual Studio Code
+vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
