@@ -1,6 +1,6 @@
 [user]
-  name = Jeff Geerling
-  email = geerlingguy@mac.com
+  name = Carl Mes
+  email = carl.mes@gmail.com
 [core]
   editor = vi
   excludesfile = ~/.gitignore
@@ -11,13 +11,14 @@
   interactive = auto
   status = auto
 [init]
-  defaultBranch = master
+  defaultBranch = main
 [web]
-  browser = google-chrome
+  browser = firefox
 [credential]
   helper = osxkeychain
 [push]
-  default = simple
+  default = current
+  autoSetupRemote = true
 [merge]
   tool = kdiff3
 [difftool]
@@ -31,4 +32,9 @@
   dc = diff --cached
   l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit
 [pull]
-	rebase = true
+  rebase = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
