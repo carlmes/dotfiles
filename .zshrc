@@ -262,9 +262,11 @@ export COMPOSER_MEMORY_LIMIT=-1
 #shopt -s extdebug
 #trap prod_command_trap DEBUG
 
+# Disable annoying homebrew environment cleanup hints
+HOMEBREW_NO_ENV_HINTS=false
 
 # Load the starship terminal theme
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # Load auto suggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
