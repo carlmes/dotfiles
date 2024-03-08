@@ -132,10 +132,10 @@ fi
 # cUrl is keg-only, which means it was not symlinked into /usr/local,
 # because macOS already provides this software and installing another version in
 # parallel can cause all kinds of trouble.
-export PATH="/usr/local/opt/curl/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/curl/lib"
-export CPPFLAGS="-I/usr/local/opt/curl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
 
 # CodeReady Containers Environment (includes oc)
 # eval $(~/crc-macos-*/crc oc-env)
