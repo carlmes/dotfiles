@@ -101,15 +101,15 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:$PATH"
 
 # Colors.
-unset LSCOLORS
-export CLICOLOR=1
-export CLICOLOR_FORCE=1
+# unset LSCOLORS
+# export CLICOLOR=1
+# export CLICOLOR_FORCE=1
 
 # Don't require escaping globbing characters in zsh.
 unsetopt nomatch
 
 # Nicer prompt.
-export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
+# export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 
 # Enable plugins.
 plugins=(git brew history kubectl oc history-substring-search)
