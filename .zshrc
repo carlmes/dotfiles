@@ -134,7 +134,7 @@ fi
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
+#export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
 
 # CodeReady Containers Environment (includes oc)
 # eval $(~/crc-macos-*/crc oc-env)
@@ -154,7 +154,7 @@ eval "$(jenv init -)"
 
 # Fix for LetsEncrypt
 # See: https://blog.bytesguy.com/resolving-lets-encrypt-issues-with-curl-on-macos
-export CURL_CA_BUNDLE=~/.cacert.pem
+# export CURL_CA_BUNDLE=~/.cacert.pem
 
 # Bash-style time output.
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
