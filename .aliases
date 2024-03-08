@@ -11,3 +11,6 @@ alias eap="/Users/carl/Development/rhpam7-install-demo/target/jboss-eap-7.4/bin/
 
 # Visual Studio Code
 vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# Dotfiles - see 
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
