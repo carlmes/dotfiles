@@ -68,9 +68,11 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git oc)
+plugins=(git brew history kubectl oc history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
+
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # User configuration
 
@@ -110,9 +112,6 @@ unsetopt nomatch
 
 # Nicer prompt.
 # export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
-
-# Enable plugins.
-plugins=(git brew history kubectl oc history-substring-search)
 
 # Add brew packages to path
 export PATH="/opt/homebrew/bin:$PATH"
