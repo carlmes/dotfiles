@@ -23,6 +23,67 @@ $ dotfiles config --local status.showUntrackedFiles no
 * [Trevor's dotfiles](https://github.com/strangiato/dotfiles)
 * [Tracking dotfiles directly with Git](https://wiki.archlinux.org/title/Dotfiles)
 
-## License
+## MacBook Configuration
 
-MIT / BSD
+Script to examine all defaults:
+
+```sh
+▶ cat defaultdiff.sh                             
+#!/bin/bash
+
+BASE=/tmp/defaults.a
+DIFF=/tmp/defaults.b
+
+defaults read > $BASE
+while sleep 1; do
+    defaults read > $DIFF
+    diff -u $BASE $DIFF
+    mv $DIFF $BASE
+done
+```
+
+## Homebrew Stuff
+
+Currently installed brew components:
+
+```sh
+▶ brew leaves -r
+ant
+argocd
+atomicparsley
+certbot
+cmark
+coreutils
+curl
+excel-compare
+ffmpeg
+git
+gobject-introspection
+gradle
+helm
+hyperkit
+iperf3
+jenv
+jmeter
+jq
+kubernetes-cli
+kustomize
+libdvdcss
+libomp
+libressl
+maven
+mkvtoolnix
+mosh
+node
+openconnect
+openjdk@11
+quarkusio/tap/quarkus
+skopeo
+source-to-image
+tektoncd-cli
+vpn-slice
+wget
+yamllint
+yt-dlp
+```
+
