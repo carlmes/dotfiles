@@ -87,3 +87,41 @@ yamllint
 yt-dlp
 ```
 
+```sh
+brew install \
+    ansible \
+    argocd \
+    awscli \
+    certbot \
+    curl \
+    ffmpeg \
+    gh \
+    git \
+    git-lfs \
+    gnu-sed \
+    hashicorp/tap/vault \
+    helm \
+    iperf \
+    jq \
+    kind \
+    kubernetes-cli \
+    kustomize \
+    make \
+    minio/stable/mc \
+    node \
+    openshift-cli \
+    podman-compose \
+    pyenv \
+    python@3.11 \
+    rclone \
+    s3cmd \
+    skopeo \
+    starship \
+    tektoncd-cli \
+    wget \
+    yamllint \
+    yq \
+    yt-dlp \
+    zsh-autosuggestions \
+    zsh-history-substring-search
+```
