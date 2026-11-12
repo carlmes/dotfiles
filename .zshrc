@@ -176,9 +176,18 @@ fi
 # Podman Environment Variables
 export PATH="$PATH:/Users/carl/.local/share/containers/podman-desktop/extensions-storage/podman-desktop.compose/bin"
 
-# Linchpin OpenShift Cluster
-export KUBECONFIG=/Users/carl/Development/Linchpin/openshift-install-mac/auth/kubeconfig
-
 # Fix for LetsEncrypt
+# curl -k https://curl.se/ca/cacert.pem -o ~/.cacert.pem
 # See: https://blog.bytesguy.com/resolving-lets-encrypt-issues-with-curl-on-macos
 # export CURL_CA_BUNDLE=~/.cacert.pem
+# brew install ca-certificates
+# export CURL_CA_BUNDLE=/opt/homebrew/Cellar/ca-certificates/2026-05-14/share/ca-certificates/cacert.pem
+export SSL_CERT_FILE=/opt/homebrew/etc/ca-certificates/cert.pem
+
+# GNU "make" has been installed as "gmake".
+# If you need to use it as "make", you can add a "gnubin" directory
+# to your PATH from your bashrc like:
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
+# Fix for default MacOS sed command exhibiting bizarre behaviour
+alias sed=gsedexport PATH="/opt/homebrew/opt/curl/bin:$PATH"
